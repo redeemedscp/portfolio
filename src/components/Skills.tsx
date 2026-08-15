@@ -1,24 +1,25 @@
 import { skills } from "@/lib/data";
+import Reveal from "./Reveal";
 import Section from "./Section";
 
 export default function Skills() {
   return (
-    <Section id="skills" title="Skills">
-      <div className="grid gap-6 sm:grid-cols-3">
-        {Object.entries(skills).map(([category, items]) => (
-          <div key={category}>
-            <h3 className="text-sm font-medium text-muted">{category}</h3>
-            <div className="mt-3 flex flex-wrap gap-1.5">
+    <Section id="skills" number="04" title="Skills">
+      <div className="grid gap-8 sm:grid-cols-3">
+        {Object.entries(skills).map(([category, items], i) => (
+          <Reveal key={category} delay={i * 0.08}>
+            <h3 className="font-mono text-xs uppercase tracking-wider text-accent">
+              {category}
+            </h3>
+            <ul className="mt-4 space-y-2 text-sm text-slate">
               {items.map((item) => (
-                <span
-                  key={item}
-                  className="rounded-full border border-border px-2.5 py-0.5 text-xs"
-                >
+                <li key={item} className="relative pl-5">
+                  <span className="absolute left-0 text-accent">▹</span>
                   {item}
-                </span>
+                </li>
               ))}
-            </div>
-          </div>
+            </ul>
+          </Reveal>
         ))}
       </div>
     </Section>

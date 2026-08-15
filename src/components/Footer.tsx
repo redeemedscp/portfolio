@@ -1,41 +1,34 @@
 import { personal } from "@/lib/data";
+import Reveal from "./Reveal";
 
 export default function Footer() {
   return (
-    <footer id="contact" className="mt-8 border-t border-border">
-      <div className="mx-auto max-w-4xl px-6 py-12">
-        <h2 className="text-xl font-semibold tracking-tight">Contact</h2>
-        <p className="mt-3 max-w-lg text-muted">
+    <footer id="contact" className="mx-auto max-w-3xl px-6 py-24 text-center sm:px-10">
+      <Reveal>
+        <p className="font-mono text-sm text-accent">06. What&apos;s Next?</p>
+        <h2 className="mt-4 text-3xl font-bold text-heading">Get In Touch</h2>
+        <p className="mx-auto mt-5 max-w-md text-slate">
           I&apos;m open to new full-time software engineering opportunities.
           The fastest way to reach me is by email.
         </p>
-        <div className="mt-5 flex flex-wrap gap-3">
-          <a
-            href={`mailto:${personal.email}`}
-            className="rounded-full bg-accent px-5 py-2.5 text-sm font-medium text-accent-foreground transition-opacity hover:opacity-90"
-          >
-            {personal.email}
-          </a>
-          <a
-            href={personal.linkedin}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-full border border-border px-5 py-2.5 text-sm font-medium transition-colors hover:border-accent hover:text-accent"
-          >
+        <a
+          href={`mailto:${personal.email}`}
+          className="btn-accent mt-8 inline-block rounded px-8 py-4 font-mono text-sm"
+        >
+          Say Hello
+        </a>
+      </Reveal>
+
+      <div className="mt-20 flex flex-col items-center gap-4 font-mono text-xs text-slate">
+        <div className="flex gap-5">
+          <a href={personal.linkedin} target="_blank" rel="noopener noreferrer" className="link-underline">
             LinkedIn
           </a>
-          <a
-            href={personal.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-full border border-border px-5 py-2.5 text-sm font-medium transition-colors hover:border-accent hover:text-accent"
-          >
+          <a href={personal.github} target="_blank" rel="noopener noreferrer" className="link-underline">
             GitHub
           </a>
         </div>
-        <p className="mt-10 text-xs text-muted">
-          © {new Date().getFullYear()} {personal.name}
-        </p>
+        <p>© {new Date().getFullYear()} {personal.name}</p>
       </div>
     </footer>
   );

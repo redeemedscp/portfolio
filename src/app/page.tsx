@@ -1,5 +1,5 @@
-import Header from "@/components/Header";
-import Hero from "@/components/Hero";
+import Sidebar from "@/components/Sidebar";
+import MobileNav from "@/components/MobileNav";
 import About from "@/components/About";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
@@ -9,17 +9,17 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <>
-      <Header />
-      <main className="flex-1">
-        <Hero />
+    <div id="top">
+      <MobileNav />
+      <Sidebar />
+      <main className="lg:ml-[380px] xl:ml-[420px]">
         <About />
         <Experience />
         <Projects />
         <Skills />
         <Education />
+        <Footer />
       </main>
-      <Footer />
-    </>
+    </div>
   );
 }
