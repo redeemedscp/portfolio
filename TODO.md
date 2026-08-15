@@ -16,16 +16,18 @@ progresses — check items off, add new ones, don't let it go stale.
 - [x] Featured 3 projects as description-only cards (no repo links, since repos are
       private): Consistente (Diaz Combat Software), Reservao, Cuba Diving (Criollos Tech)
 - [x] Bio/tagline rewritten per feedback: no front-end/cloud framing — "I love building
-      all kinds of software, I work solving business problems..."
+      all kinds of software, I work solving business problems..." with front-end/cloud
+      mentioned only in the context of the specific jobs where they applied
+- [x] Bio also name-drops Consistente and Reservao as side projects
 - [x] Verified: `tsc --noEmit` clean, `npm run lint` clean, dev server renders all
       sections correctly
+- [x] Pushed to GitHub: https://github.com/redeemedscp/portfolio (public repo)
+- [x] Deployed to Vercel, connected to the GitHub repo (auto-deploys on push to `main`):
+      https://portfolio-orcin-gamma-2i4u01h7pk.vercel.app
+      (Vercel project: `adiaxs-projects/portfolio`, logged in as `sidecontrolpapi`)
 
 ## Open decisions / not yet done
 
-- [ ] **Deploy to Vercel.** Chosen host, not yet connected. Needs a `vercel` login/link
-      or GitHub integration once this repo is pushed somewhere.
-- [ ] **This repo isn't pushed to GitHub yet.** Decide: new repo under `redeemedscp`,
-      public or private? (Likely public, since it's the portfolio itself.)
 - [ ] **Custom domain**: the resume lists `avaldesdiaz.com` as an existing personal
       domain — confirm whether to point it at this Vercel deployment.
 - [ ] **Favicon/OG image** still the default Next.js favicon — replace with something
