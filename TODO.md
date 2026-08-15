@@ -25,18 +25,38 @@ progresses — check items off, add new ones, don't let it go stale.
 - [x] Deployed to Vercel, connected to the GitHub repo (auto-deploys on push to `main`):
       https://portfolio-orcin-gamma-2i4u01h7pk.vercel.app
       (Vercel project: `adiaxs-projects/portfolio`, logged in as `sidecontrolpapi`)
+- [x] Redesigned in the style of brittanychiang.com (sourced from the open-source
+      `bchiang7/v4` repo for the actual color tokens/hover mechanics, not copied content):
+      dark navy background, green accent, monospace numbered section headings
+      (01. About … 06. Contact), fixed left sidebar with nav + socials on desktop,
+      slide-down mobile menu, lift-on-hover project cards with hard drop-shadow,
+      animated underline links, `framer-motion` scroll-reveal + staggered entrances
+- [x] Added inline GitHub/LinkedIn brand SVGs (`src/components/icons/BrandIcons.tsx`)
+      since `lucide-react` dropped brand icons in recent versions
+- [x] Verified: `tsc --noEmit` clean, `npm run lint` clean, `npm run build` clean,
+      dev server renders correctly — pushed and confirmed live on Vercel
 
 ## Open decisions / not yet done
 
+- [ ] **Chrome extension wasn't connected this session** — the redesign above was
+      verified via curl'd HTML + build output, not a visual/interactive check in an
+      actual browser (hover states, mobile menu animation, scroll-reveal timing).
+      Worth a manual look, or reconnect Chrome and have it re-verify visually.
+- [ ] **Company logos**: user wants logos for Hogarth Worldwide, Oracle Cloud
+      Infrastructure, SAS Institute, and Rice University in the Experience/Education
+      section — approved to source from official sites, not yet done (blocked on
+      Chrome access this session).
+- [ ] **Live project screenshots**: user wants real screenshots of Consistente,
+      Reservao, and/or Cuba Diving in the Projects cards if any are deployed publicly.
+      Waiting on the user to paste live URLs — none provided yet.
 - [ ] **Custom domain**: the resume lists `avaldesdiaz.com` as an existing personal
       domain — confirm whether to point it at this Vercel deployment.
 - [ ] **Favicon/OG image** still the default Next.js favicon — replace with something
-      personal before sharing the link.
+      personal before sharing the link (matters more now that there's a real visual
+      identity/theme to draw from).
 - [ ] **GitHub profile README** — original ask was "portfolio + GitHub profile." The
       GitHub-profile piece (a `redeemedscp/redeemedscp` special repo with a profile
       README) hasn't been started.
-- [ ] Mobile/responsive pass and a real-browser check haven't been done yet — only
-      verified via curl'd HTML and lint/type-check so far.
 - [ ] Resume PDF and `src/lib/data.ts` are maintained separately — if the resume changes,
       remember to update both.
 
