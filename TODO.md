@@ -35,22 +35,29 @@ progresses — check items off, add new ones, don't let it go stale.
       since `lucide-react` dropped brand icons in recent versions
 - [x] Verified: `tsc --noEmit` clean, `npm run lint` clean, `npm run build` clean,
       dev server renders correctly — pushed and confirmed live on Vercel
+- [x] Custom domain connected: `avaldesdiaz.com` and `www.avaldesdiaz.com` added to the
+      Vercel project (`vercel domains add`); user added the A records
+      (`avaldesdiaz.com` / `www.avaldesdiaz.com` → `76.76.21.21`) in Route 53 (registrar:
+      Amazon Registrar). Verified live with a valid Let's Encrypt cert — domain
+      previously pointed to an empty GitHub Pages 404, nothing was lost.
+- [x] Confirmed personal GitHub repos are still all private except `portfolio` (kept
+      public on purpose — it's the source behind the live site, user confirmed keep
+      public over a literal "private everything" reading)
 
 ## Open decisions / not yet done
 
-- [ ] **Chrome extension wasn't connected this session** — the redesign above was
-      verified via curl'd HTML + build output, not a visual/interactive check in an
-      actual browser (hover states, mobile menu animation, scroll-reveal timing).
-      Worth a manual look, or reconnect Chrome and have it re-verify visually.
+- [ ] **Chrome extension is still not connected** — tried again, still fails
+      ("Browser extension is not connected"). User needs to install/re-enable it from
+      https://claude.ai/chrome, log into the extension with the same Claude account,
+      and fully restart Chrome. Blocks: visual/interactive QA of the redesign, sourcing
+      company logos, and screenshotting live projects.
 - [ ] **Company logos**: user wants logos for Hogarth Worldwide, Oracle Cloud
       Infrastructure, SAS Institute, and Rice University in the Experience/Education
       section — approved to source from official sites, not yet done (blocked on
-      Chrome access this session).
+      Chrome access).
 - [ ] **Live project screenshots**: user wants real screenshots of Consistente,
       Reservao, and/or Cuba Diving in the Projects cards if any are deployed publicly.
       Waiting on the user to paste live URLs — none provided yet.
-- [ ] **Custom domain**: the resume lists `avaldesdiaz.com` as an existing personal
-      domain — confirm whether to point it at this Vercel deployment.
 - [ ] **Favicon/OG image** still the default Next.js favicon — replace with something
       personal before sharing the link (matters more now that there's a real visual
       identity/theme to draw from).
