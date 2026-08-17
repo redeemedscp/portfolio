@@ -123,6 +123,19 @@ export const projects: Project[] = [
     stack: ["Next.js", "Material UI", "Express", "MongoDB", "Sequelize", "Stripe"],
     visibility: "private",
   },
+  {
+    name: "MKL Payments",
+    org: "Criollos Tech",
+    description:
+      "QR-based point-of-sale and payments platform, with a structured NestJS backend and a merchant-facing analytics dashboard.",
+    highlights: [
+      "QR-code checkout flow for in-person payments",
+      "NestJS backend with Sequelize/MySQL, built around modular, dependency-injected services",
+      "Merchant analytics dashboard for transaction reporting",
+    ],
+    stack: ["Next.js", "NestJS", "TypeScript", "Sequelize", "MySQL", "shadcn/ui"],
+    visibility: "private",
+  },
 ];
 
 export const skills = {
