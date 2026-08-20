@@ -31,10 +31,10 @@ export const experience: Experience[] = [
     company: "Hogarth Worldwide",
     role: "Mid-Level Developer",
     location: "Miami, FL",
-    dates: "Feb 2025 – Present",
+    dates: "Feb 2025 – Apr 2026",
     bullets: [
-      "Work as part of a Geo-Localization team for a global tech manufacturing client, Apple Inc.",
-      "Maintain and build 100+ web marketing pages using multiple front-end technologies",
+      "Worked as part of a Geo-Localization team for a global tech manufacturing client, Apple Inc.",
+      "Maintained and built 100+ web marketing pages using multiple front-end technologies",
       "Created an Electron-React desktop application to improve visualization of internal ticket management software, boosting productivity by 25% for Program Managers",
       "Built an Electron-React desktop application for QA Engineers that simplified work distribution by 50%",
     ],
@@ -166,7 +166,7 @@ export const education = {
   school: "Rice University",
   location: "Houston, TX",
   degree: "Bachelor of Science in Computer Science",
-  dates: "Aug 2022 – May 2025",
+  dates: "Aug 2022 – May 2024",
   coursework: [
     "Computer Systems",
     "Algorithms",
