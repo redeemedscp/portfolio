@@ -8,7 +8,7 @@ export default function Experience() {
       <div className="space-y-10">
         {experience.map((job, i) => (
           <Reveal key={`${job.company}-${job.dates}`} delay={i * 0.08}>
-            <div className="relative border-l-2 border-border pl-6 transition-colors hover:border-accent">
+            <div className="relative -mx-4 -my-2 rounded-lg p-4 transition-all duration-300 hover:-translate-y-1 hover:bg-card hover:shadow-[0_10px_30px_-15px_rgba(2,12,27,0.7)] sm:-mx-6 sm:p-6">
               <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
                 <h3 className="text-lg font-medium text-heading">
                   {job.role} <span className="text-accent">@ {job.company}</span>

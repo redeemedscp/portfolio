@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
-const SIZE = 700;
+const SIZE = 1200;
 
 export default function CursorGlow() {
   const ref = useRef<HTMLDivElement>(null);
@@ -50,7 +50,7 @@ export default function CursorGlow() {
         width: SIZE,
         height: SIZE,
         background:
-          "radial-gradient(circle, rgba(136,146,176,0.12), rgba(136,146,176,0.04) 45%, transparent 70%)",
+          "radial-gradient(circle, rgba(136,146,176,0.14), rgba(136,146,176,0.05) 40%, transparent 70%)",
       }}
     />
   );
