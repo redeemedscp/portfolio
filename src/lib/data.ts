@@ -191,7 +191,7 @@ export const activities = [
   {
     org: "Rice University MMA Club",
     role: "Vice President & Brazilian Jiu-Jitsu Coach",
-    dates: "Aug 2022 – Dec 2024",
+    dates: "Aug 2022 – May 2024",
     detail: "Led weekly BJJ practices and organized club social events.",
   },
   {
