@@ -28,6 +28,21 @@ export type Experience = {
 
 export const experience: Experience[] = [
   {
+    company: "Delight GHJ Holdings Corp",
+    role: "Workday Technical Developer Consultant",
+    location: "Miami, FL",
+    dates: "Jan 2026 – Present",
+    bullets: [
+      "Designed and delivered custom Workday reports and calculated fields for Finance stakeholders, translating raw transactional data into decision-ready analytics for AP, Procurement, and Banking teams",
+      "Configured and maintained Integration System Users (ISUs) and API connections between Workday and NetSuite, Boomi, and third-party banking systems, supporting secure, reliable data exchange",
+      "Built and managed Prism Analytics data tables to consolidate Workday and external financial data for downstream reporting and analysis",
+      "Administered user-based and role-based security groups across HCM and Financials domains, provisioning and auditing access in line with least-privilege principles",
+      "Ran and analyzed Segregation of Duties (SOD) audit reports, identifying access conflicts and driving remediation tasks to close compliance gaps",
+      "Supported configuration and troubleshooting of core Financial business processes, including Accounts Payable, Procurement, Expenses, Suppliers, Purchase Orders, Customers, and Banking",
+      "Gained hands-on exposure to HCM and Recruitment configuration and testing, broadening cross-functional Workday delivery capability beyond core Financials",
+    ],
+  },
+  {
     company: "Hogarth Worldwide",
     role: "Mid-Level Developer",
     location: "Miami, FL",
