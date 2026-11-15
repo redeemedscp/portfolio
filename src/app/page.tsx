@@ -1,4 +1,5 @@
 import { ArrowUpRight, Star } from "lucide-react";
+import BellTerminal from "@/components/BellTerminal";
 import Reveal from "@/components/Reveal";
 import {
   activities,
@@ -23,6 +24,7 @@ const tickerItems = [
   "Open to full-time software engineering roles",
   `${experience[0].role} @ ${experience[0].company}`,
   "API · Web · Mobile",
+  "Can you find the easter egg?",
 ];
 
 /** Billing for a role by its position on the card. */
@@ -77,9 +79,12 @@ export default function Home() {
 
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <header className="flex items-center justify-between gap-6 py-5 font-mono text-xs uppercase tracking-widest">
-          <a href="#top" className="font-display text-2xl tracking-normal">
-            AVD
-          </a>
+          <div className="flex items-center gap-3">
+            <a href="#top" className="font-display text-2xl tracking-normal">
+              AVD
+            </a>
+            <BellTerminal />
+          </div>
           <nav className="hidden gap-7 md:flex">
             {nav.map((link) => (
               <a
@@ -110,7 +115,7 @@ export default function Home() {
                 <p className="font-mono text-xs uppercase tracking-[0.3em] text-accent">
                   {personal.title} · {personal.location}
                 </p>
-                <h1 className="mt-4 font-display text-[21vw] uppercase leading-[0.98] sm:text-[15vw] lg:text-[9.5rem]">
+                <h1 className="mt-4 font-display text-[17vw] uppercase leading-[0.98] sm:text-[15vw] lg:text-[9.5rem]">
                   {firstName}
                   <br />
                   <span className="outline-text whitespace-nowrap">{rest.join(" ")}</span>
@@ -132,6 +137,10 @@ export default function Home() {
                     See the card
                   </a>
                 </div>
+                <p className="mt-6 font-mono text-xs text-muted">
+                  Psst: there&rsquo;s an easter egg on this page. Hint: every
+                  fight starts with one.
+                </p>
               </Reveal>
 
               {/* Tale of the tape */}

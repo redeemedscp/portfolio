@@ -77,6 +77,44 @@ body {
   animation: ticker 35s linear infinite;
 }
 
+/* The easter-egg bell swings briefly every few seconds to catch the eye. */
+@keyframes ring {
+  0%,
+  12%,
+  100% {
+    transform: rotate(0);
+  }
+  2% {
+    transform: rotate(18deg);
+  }
+  4% {
+    transform: rotate(-16deg);
+  }
+  6% {
+    transform: rotate(12deg);
+  }
+  8% {
+    transform: rotate(-8deg);
+  }
+  10% {
+    transform: rotate(4deg);
+  }
+}
+.bell svg {
+  transform-origin: 50% 0;
+  animation: ring 5s ease-in-out infinite;
+}
+
+@keyframes terminal-in {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.98);
+  }
+}
+.terminal-in {
+  animation: terminal-in 0.2s ease-out;
+}
+
 details > summary {
   list-style: none;
   cursor: pointer;
@@ -95,7 +133,9 @@ details:not([open]) .when-open {
   html {
     scroll-behavior: auto;
   }
-  .ticker-track {
+  .ticker-track,
+  .bell svg,
+  .terminal-in {
     animation: none;
   }
 }
