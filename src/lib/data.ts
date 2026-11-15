@@ -50,6 +50,7 @@ export const experience: Experience[] = [
       "Hardened platform security: audited the API and closed dozens of unauthenticated endpoints, added layered role- and action-level permissions, AES-256-GCM field encryption for SSNs and bank details, token-refresh validation, and removed committed credentials in favor of environment secrets",
       "Cut the core client-search endpoint from 11s to 143ms through query profiling and restructuring, and added multi-select filtering, URL-synced views, bulk actions, and Excel/CSV export on top of it",
       "Own mobile release engineering: GitHub Actions and EAS pipelines for over-the-air updates, native builds, and App Store / Play Store releases, custom Expo config plugins, and a bilingual (English/Spanish) experience with deep-linked push notifications and biometric sign-in",
+      "Run an AI-agent-assisted development workflow with Claude Code across all three codebases: maintain the repo guidance and architecture docs the agents work from, direct them through scoped tasks, and review and verify their output before it ships",
       "Designed a read-only, API-key-authenticated reporting API with rate limiting and zero-downtime key rotation for an AI assistant integration, plus geocoded nearest-facility search for placing clients with treatment providers",
     ],
   },
@@ -185,6 +186,7 @@ export const skills = {
     "Terraform",
     "Firebase",
     "Figma",
+    "Claude Code / AI agents",
   ],
 };
 
