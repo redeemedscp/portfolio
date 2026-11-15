@@ -143,6 +143,7 @@ export default function BellTerminal() {
           "goto <section>   close the terminal and jump to that part of the page",
           "whoami           the short version",
           "stats            headline numbers",
+          "truth            the most important line here",
           "resume           open my resume",
           "email            start an email to me",
           "clear            clear the screen",
@@ -173,6 +174,9 @@ export default function BellTerminal() {
         break;
       case "stats":
         output = stats.map((s) => `${s.value.padEnd(6)} ${s.label}`);
+        break;
+      case "truth":
+        output = [gold("Christ is King.")];
         break;
       case "resume":
         window.open(personal.resumeUrl, "_blank", "noopener,noreferrer");
