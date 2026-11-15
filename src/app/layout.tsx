@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
-import CursorGlow from "@/components/CursorGlow";
+import { Anton, Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,6 +12,12 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const poster = Anton({
+  variable: "--font-poster",
+  subsets: ["latin"],
+  weight: "400",
+});
+
 export const metadata: Metadata = {
   title: "Adrian Valdes Diaz — Software Engineer",
   description:
@@ -23,12 +28,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${poster.variable} h-full antialiased`}
     >
-      <body className="min-h-full">
-        <CursorGlow />
-        {children}
-      </body>
+      <body className="min-h-full">{children}</body>
     </html>
   );
 }
