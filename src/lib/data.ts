@@ -7,6 +7,7 @@ export const personal = {
   linkedin: "https://www.linkedin.com/in/adrian-valdes-diaz/",
   github: "https://github.com/redeemedscp",
   resumeUrl: "/resume.pdf",
+  location: "Miami, FL",
   bio: `I love building all kinds of software. I work solving business problems, and I
 change the tools and fields I work in according to what the solution needs — from
 building internal front-end desktop tools at Hogarth Worldwide, to automating end-to-end
@@ -17,6 +18,15 @@ work, I've built Consistente, an attendance tracking system for MMA gyms, and Re
 booking system similar to Booksy. I'm currently open to new full-time software
 engineering roles.`,
 };
+
+// Headline numbers shown in hero/stat areas. Sourced from the YourAccidentPro
+// role below — keep the two in sync if those bullets change.
+export const stats = [
+  { value: "170K+", label: "lines of code across the platform I lead" },
+  { value: "450+", label: "REST API endpoints in production" },
+  { value: "77×", label: "faster client search (11s → 143ms)" },
+  { value: "3", label: "apps shipped: API, web CRM, iOS/Android" },
+];
 
 export type Experience = {
   company: string;
