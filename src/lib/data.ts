@@ -28,18 +28,19 @@ export type Experience = {
 
 export const experience: Experience[] = [
   {
-    company: "Delight GHJ Holdings Corp",
-    role: "Workday Technical Developer Consultant",
+    company: "YourAccidentPro",
+    role: "Lead Developer",
     location: "Miami, FL",
-    dates: "Jan 2026 – Present",
+    dates: "Apr 2026 – Present",
     bullets: [
-      "Designed and delivered custom Workday reports and calculated fields by translating stakeholder requirements into reliable, decision-ready reporting for AP, Procurement, Banking, and other Finance functions",
-      "Administered user-based and role-based security groups across HCM and Financials domains, provisioning and auditing access using least-privilege principles and supporting secure handling of sensitive enterprise data",
-      "Ran and analyzed Segregation of Duties (SOD) audit reports, identified access conflicts, and supported remediation activities to strengthen governance and compliance",
-      "Configured and maintained Integration System Users (ISUs) and API connections between Workday, NetSuite, Boomi, and third-party banking systems, supporting secure and reliable data exchange",
-      "Supported configuration, testing, and troubleshooting of Workday business processes across Financials; investigated process behavior, security, and configuration issues to help resolve production problems",
-      "Built and maintained Prism Analytics data tables that consolidate Workday and external data for downstream reporting and analysis",
-      "Contributed to HCM and Recruiting configuration and testing, expanding cross-functional Workday experience beyond core Financials",
+      "Lead development of a three-app personal-injury lead and case-management platform (170K+ lines): a Node.js/Express/MongoDB REST API with 450+ endpoints and 65 data models, a Next.js 16 / React 19 back-office CRM, and an Expo/React Native app shipped to the App Store and Google Play",
+      "Replaced the company's Monday.com board with an in-house case-management CRM covering intake, legal and medical placement, vendor and treatment-facility management, visit tracking, and document handling, turning the back office into the daily system of record for operations staff",
+      "Built an event-driven workflow engine with 20+ automated task types that opens, routes, and auto-closes work for staff as cases progress, with permission-based routing, scheduled background sweeps, stale-case guard rails, duplicate-lead detection and merging, and push/in-app notifications",
+      "Integrated DocuSign eSignature end to end (JWT Grant auth, per-state retainer templates, real-time webhooks plus a polling safety net) and automated generation of filled intake-form PDFs and attorney-ready case-file packages delivered by email",
+      "Hardened platform security: audited the API and closed dozens of unauthenticated endpoints, added layered role- and action-level permissions, AES-256-GCM field encryption for SSNs and bank details, token-refresh validation, and removed committed credentials in favor of environment secrets",
+      "Cut the core client-search endpoint from 11s to 143ms through query profiling and restructuring, and added multi-select filtering, URL-synced views, bulk actions, and Excel/CSV export on top of it",
+      "Own mobile release engineering: GitHub Actions and EAS pipelines for over-the-air updates, native builds, and App Store / Play Store releases, custom Expo config plugins, and a bilingual (English/Spanish) experience with deep-linked push notifications and biometric sign-in",
+      "Designed a read-only, API-key-authenticated reporting API with rate limiting and zero-downtime key rotation for an AI assistant integration, plus geocoded nearest-facility search for placing clients with treatment providers",
     ],
   },
   {
