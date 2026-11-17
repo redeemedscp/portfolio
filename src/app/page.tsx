@@ -360,8 +360,18 @@ export default function Home() {
       </div>
 
       {/* Contact */}
-      <section id="contact" className="scroll-mt-6 bg-accent text-accent-foreground">
-        <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8">
+      <section
+        id="contact"
+        className="relative scroll-mt-6 overflow-hidden bg-accent text-accent-foreground"
+      >
+        {/* Easter egg: a faint watermark behind the contact block. */}
+        <p
+          aria-hidden
+          className="pointer-events-none absolute inset-x-0 bottom-0 select-none whitespace-nowrap text-center font-display text-[8.5vw] uppercase leading-none text-black/[0.09]"
+        >
+          Ad majorem Dei gloriam
+        </p>
+        <div className="relative mx-auto max-w-6xl px-5 py-20 sm:px-8">
           <Reveal>
             <p className="font-mono text-xs uppercase tracking-[0.3em]">
               Open to full-time software engineering roles
