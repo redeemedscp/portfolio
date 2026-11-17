@@ -362,16 +362,9 @@ export default function Home() {
       {/* Contact */}
       <section
         id="contact"
-        className="relative scroll-mt-6 overflow-hidden bg-accent text-accent-foreground"
+        className="scroll-mt-6 bg-accent text-accent-foreground"
       >
-        {/* Easter egg: a faint watermark behind the contact block. */}
-        <p
-          aria-hidden
-          className="pointer-events-none absolute inset-x-0 bottom-0 select-none whitespace-nowrap text-center font-display text-[8.5vw] uppercase leading-none text-black/[0.09]"
-        >
-          Ad majorem Dei gloriam
-        </p>
-        <div className="relative mx-auto max-w-6xl px-5 py-20 sm:px-8">
+        <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8">
           <Reveal>
             <p className="font-mono text-xs uppercase tracking-[0.3em]">
               Open to full-time software engineering roles
@@ -408,6 +401,15 @@ export default function Home() {
               </a>
             </div>
           </footer>
+          {/* Easter egg: a faint motto below the footer. It wraps to two lines
+              on phones so it stays large enough to read. */}
+          <p
+            aria-hidden
+            className="pointer-events-none mt-14 select-none text-center font-display text-[13vw] uppercase leading-[1.05] text-black/[0.18] sm:mt-20 sm:whitespace-nowrap sm:text-[8.5vw] sm:leading-none"
+          >
+            Ad majorem
+            <br className="sm:hidden" /> Dei gloriam
+          </p>
         </div>
       </section>
     </div>
