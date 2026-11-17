@@ -46,6 +46,25 @@ progresses — check items off, add new ones, don't let it go stale.
 
 ## Open decisions / not yet done
 
+### Added 2026-11-17 (check these later)
+
+- [ ] **Update `public/resume.pdf`** — outdated: missing the YourAccidentPro Lead Developer
+      role (Apr 2026 – Present), MKL Payments, and the Hogarth end date / other date
+      corrections now in `src/lib/data.ts`.
+- [ ] **Refresh `CLAUDE.md`** — its Architecture section still describes the old sidebar
+      layout (Header/Hero/About/Section components). The site is now the single-file
+      fight-card `src/app/page.tsx` plus `BellTerminal.tsx`; the theme tokens and the
+      `npm run dev/build` notes (local Turbopack fails; use `npx next build --webpack` /
+      `npx next dev --webpack -p <port>`) also need updating.
+- [ ] **Shut down leftover dev servers** on ports 3001–3006 (design exploration worktrees).
+- [ ] **Decide what to do with the other design branches** (local only, never pushed):
+      `design/editorial`, `design/bento`, `design/ide`, `design/fight-card`,
+      `design/fight-terminal` in `/Users/scp/portfolio-designs/`. Keep or delete.
+- [ ] **Interview prep** — have Claude grill you on each YourAccidentPro bullet (and the
+      AI-agent workflow bullet) the way an interviewer would.
+- [ ] Items below under "Done" that mention the sidebar design, Brittany Chiang style, and
+      the Chrome-extension/logos blockers are stale since the fight-card redesign.
+
 - [ ] **Chrome extension is still not connected** — tried again, still fails
       ("Browser extension is not connected"). User needs to install/re-enable it from
       https://claude.ai/chrome, log into the extension with the same Claude account,
