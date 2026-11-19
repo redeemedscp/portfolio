@@ -405,7 +405,7 @@ export default function Home() {
               on phones so it stays large enough to read. */}
           <p
             aria-hidden
-            className="pointer-events-none mt-14 select-none text-center font-display text-[13vw] uppercase leading-[1.05] text-black/[0.18] sm:mt-20 sm:whitespace-nowrap sm:text-[8.5vw] sm:leading-none"
+            className="pointer-events-none mt-14 select-none text-center font-display text-[13vw] uppercase leading-[1.05] text-black/[0.18] sm:mt-20 sm:whitespace-nowrap sm:text-[min(8.5vw,6.5rem)] sm:leading-none"
           >
             Ad majorem
             <br className="sm:hidden" /> Dei gloriam
