@@ -3,7 +3,7 @@ export const personal = {
   title: "Software Engineer",
   tagline:
     "I love building all kinds of software. I work solving business problems, and change the tools and fields I work in according to what the solution needs.",
-  email: "adrianvaldes1439@gmail.com",
+  email: "adrian@adrianvaldes.com",
   linkedin: "https://www.linkedin.com/in/adrian-valdes-diaz/",
   github: "https://github.com/redeemedscp",
   resumeUrl: "/resume.pdf",
