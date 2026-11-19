@@ -1,5 +1,5 @@
 export const personal = {
-  name: "Adrian Valdes Diaz",
+  name: "Adrian Valdes",
   title: "Software Engineer",
   tagline:
     "I love building all kinds of software. I work solving business problems, and change the tools and fields I work in according to what the solution needs.",

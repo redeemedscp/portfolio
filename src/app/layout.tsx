@@ -19,9 +19,9 @@ const poster = Anton({
 });
 
 export const metadata: Metadata = {
-  title: "Adrian Valdes Diaz — Software Engineer",
+  title: "Adrian Valdes — Software Engineer",
   description:
-    "Portfolio of Adrian Valdes Diaz, a software engineer who loves building all kinds of software.",
+    "Portfolio of Adrian Valdes, a software engineer who loves building all kinds of software.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
