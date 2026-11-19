@@ -209,7 +209,7 @@ export default function BellTerminal() {
         title="Ring the bell"
         className="bell text-gold transition-transform hover:scale-125"
       >
-        <Bell size={18} fill="currentColor" />
+        <Bell size={22} fill="currentColor" />
       </button>
 
       {open && (

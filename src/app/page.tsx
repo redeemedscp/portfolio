@@ -136,9 +136,11 @@ export default function Home() {
                     See the card
                   </a>
                 </div>
-                <p className="mt-6 font-mono text-xs text-muted">
-                  Psst: there&rsquo;s an easter egg on this page. Hint: every
-                  fight starts with one.
+                <p className="mt-6 max-w-md font-mono text-sm leading-relaxed text-foreground">
+                  <span className="font-bold uppercase tracking-widest text-gold">
+                    Psst!
+                  </span>{" "}
+                  Something gold at the top wants to be clicked.
                 </p>
               </Reveal>
 
