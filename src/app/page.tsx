@@ -21,7 +21,6 @@ const nav = [
 
 const tickerItems = [
   `Fighting out of ${personal.location}`,
-  "Open to full-time software engineering roles",
   `${experience[0].role} @ ${experience[0].company}`,
   "API · Web · Mobile",
   "Can you find the easter egg?",
@@ -366,12 +365,9 @@ export default function Home() {
       >
         <div className="mx-auto max-w-6xl px-5 py-20 sm:px-8">
           <Reveal>
-            <p className="font-mono text-xs uppercase tracking-[0.3em]">
-              Open to full-time software engineering roles
-            </p>
             <a
               href={`mailto:${personal.email}`}
-              className="group mt-4 block font-display text-[19vw] uppercase leading-[0.98] sm:text-[15vw] lg:text-[12rem]"
+              className="group block font-display text-[19vw] uppercase leading-[0.98] sm:text-[15vw] lg:text-[12rem]"
             >
               Book the
               <br />

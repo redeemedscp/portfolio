@@ -15,8 +15,7 @@ cloud testing infrastructure at Oracle Cloud Infrastructure, to designing a
 domain-specific language and editor at SAS Institute. I studied Computer Science at Rice
 University, where I also served as Vice President of the MMA Club. Outside of full-time
 work, I've built Consistente, an attendance tracking system for MMA gyms, and Reservao, a
-booking system similar to Booksy. I'm currently open to new full-time software
-engineering roles.`,
+booking system similar to Booksy.`,
 };
 
 // Headline numbers shown in hero/stat areas. Sourced from the YourAccidentPro
